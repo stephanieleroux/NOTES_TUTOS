@@ -30,10 +30,10 @@
 	- Guillaume Serazin’s python tool (Loess, polynomial degree 2) from his python package [PyCLim](http://servforge.legi.grenoble-inp.fr/projects/soft-pyclim)
 		- you can use as a package in your own python script,
 		- or you can use as a __cdftool-like tool__: __```ncDtrend```__ in a shell script. 
-		- Example of how to use ```ncDtrend``` on Curie: ``` /ccc/cont003/home/gen0727/lerouxst/SHARED/SCRIPTS/OHC/loessdtrend_OHC.sh```
+		- Example of how to use ```ncDtrend``` (on CURIE): ``` /ccc/cont003/home/gen0727/lerouxst/SHARED/SCRIPTS/OHC/loessdtrend_OHC.sh```
 * On 2-d fields (x-y), 5-day:
 	- Trends computed from the annual mean fields (take spine). Remove from the 5d fields.
-	- Example of how to use from Sally Close’s script:  ``` /ccc/cont003/home/gen0727/lerouxst/SHARED/SCRIPTS/detrend_from_annual_Sally.py```
+	- Example of how to use from Sally Close’s script (on CURIE):  ``` /ccc/cont003/home/gen0727/lerouxst/SHARED/SCRIPTS/SSH/detrend_from_annual_Sally.py```
 	- Advantage: faster than ncDtrend since operating on the annual fields to retrieve the trends.
 
 
