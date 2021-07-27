@@ -189,6 +189,7 @@ Last update: 2021-07-26. Caution! This tuto might need some adjustements and fix
   
   ```
 
+* you'll also need to edit all the paths where to move the outputs of the simulation (see at the end of the script).
 
 
 * then you're good to go! To run the experiment:
