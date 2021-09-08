@@ -171,6 +171,7 @@ Last update: 2021-07-26. Caution! This tuto might need some adjustements and fix
   # then duplicate to edit and use as your script for new experiment 
   cp go_nemo_ens.MEDWEST60-GSL19-ens01.9.sh go_nemo_ens.MEDWEST60-GSL19-ens01.sh
   ```
+  Note that above are copied the xml files of the GSL19 experiment for consistency. If you want to use the same xml as for your experiment GSL21 with outputs at the timestep, you can get the files here: ```/gpfsstore/rech/egi/commun/MEDWEST60/MEDWEST60-GSL19-CONFIG/XML/XML-GSL21/```.
 
   
 
