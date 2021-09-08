@@ -12,24 +12,24 @@ J'ai utilisé la version Laurent de l'outil de recombinaison NEMO. C'est un outi
   cp rebuild_nemo_tr.f90 /gpfswork/rech/egi/regi915/DEVGIT/NEMODRAK_release-3.6/NEMOREF/NEMOGCM/TOOLS/REBUILD_NEMO/src/
   ```
 
-* ```
-  cd /gpfswork/rech/egi/regi915/DEVGIT/NEMODRAK_release-3.6/NEMOREF/NEMOGCM/TOOLS
+* Se rendre dans le repertoire du DCM:
   ```
-
+  cd /gpfswork/rech/egi/regi915/DEVGIT/NEMODRAK_release-3.6/NEMOREF/NEMOGCM/TOOLS
+  # QUENTIN: remplace regi915
+  ```
   Dans ce repertoire normalement tu dois avoir un executable du DCM qui s'appelle `maketools` et  un lien vers ton fichier ARCH (.fcm). Si non, refais le lien, par exemple pour moi:
 
   ```
   ln -sf /linkhome/rech/genige01/regi915/CONFIGS/CONFIG_MEDWEST60/MEDWEST60-GSL01/ARCH/arch-X64_JEANZAY_SLX.fcm .
+   # QUENTIN: remplace regi915
   ```
 
 * Pour compiler l'outil:
 
   ```
   ./maketools -n REBUILD_NEMO -m X64_JEANZAY_SLX
+   # (modifier le -m en fonction du nom du fichier arch à utiliser)
   ```
-
-  (modifier le -m en fonction du nom du fichier arch à utiliser)
-
   --> SI tout se passe bien, tu as un script .ksh et un executable .exe qui ont été créés dans le sous repertoire REBUILD_NEMO. Par exemple chez moi:
 
   ```
@@ -53,6 +53,7 @@ J'ai utilisé la version Laurent de l'outil de recombinaison NEMO. C'est un outi
 
   ```
   TOOLDIR=/gpfswork/rech/egi/regi915/DEVGIT/NEMODRAK_release-3.6/NEMOREF/NEMOGCM/TOOLS/REBUILD_NEMO/
+  # QUENTIN: remplace regi915
   
   NXIOS=30   # nombre de serveurs xios (ou nombre de fichiers à recombiner)
   CX=883     # taille du domaine en x
