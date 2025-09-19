@@ -5,9 +5,12 @@
 
 
 ### Processing
-* J’ai d’abord dégradé la résolution des simulations d’un facteur 6 avec l’outil [`cdfdegrad`](https://github.com/meom-group/CDFTOOLS) pour approcher les 75 km d’OSISAF (12 km x 6 = 72 km).
+* J’ai d’abord dégradé la résolution des simulations d’un facteur 6 avec l’outil [`cdfdegrad`](https://github.com/meom-group/CDFTOOLS) pour approcher les 75 km d’OSISAF (12 km x 6 = 72 km). _Exemple de script [ici](https://github.com/stephanieleroux/NOTES_TUTOS/tree/master/SRC/compNANUK4-OSISAF-drift)._
+_
 
-* Ensuite j’ai regrillé les simus dégradées sur la grille OSISAF avec l’outil [Sosie](https://brodeau.github.io/sosie/) de Laurent Brodeau.  _Note: si on applique le regridding sur chacune des composantes de la vitesse plutôt que sur le module, il faut penser à la rotation des vecteurs lors du changement de grille. Il faudrait bidouiller un peu Sosie pour introduire l'angle de rotation qui n'est actuellement prévu dans Sosie que pour un regridding d'une grille regulière vers une grille NEMO._ 
+* Ensuite j’ai regrillé les simus dégradées sur la grille OSISAF avec l’outil [Sosie](https://brodeau.github.io/sosie/) de Laurent Brodeau. _Exemple de script et namelist pour Sosie [ici](https://github.com/stephanieleroux/NOTES_TUTOS/tree/master/SRC/compNANUK4-OSISAF-drift)._
+
+_Note:_ si on applique le regridding sur chacune des composantes de la vitesse plutôt que sur le module, il faut penser à la rotation des vecteurs lors du changement de grille. Il faudrait bidouiller un peu Sosie pour introduire l'angle de rotation qui n'est actuellement prévu dans Sosie que pour un regridding d'une grille regulière vers une grille NEMO.
 
 ### Outils et scripts
 * [cdftools](https://github.com/meom-group/CDFTOOLS).
